@@ -21,7 +21,23 @@ public class Set_IthBit {
         int intmast = newBit<<i;
         return n | intmast;
     }
+
+    public static int clearIBits(int n ,int i) {
+        int bitMask = (~0)<<i;
+        return n & bitMask;
+    }
+
+    public static int ClearRange(int n, int i, int j){
+        int a = (~0)<<(j+1);
+        int b = (1<<i) -1;
+        int bitMask = a | b;
+        return n & bitMask;
+    }
+
+    public static boolean isPowerOrNot(int n){
+        return (n &( n-1)) == 0;
+    }
     public static void main(String[] args) {
-        System.out.println(updateIth(10, 2, 1));
+        System.out.println(isPowerOrNot(15));
     }
 }
