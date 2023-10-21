@@ -13,9 +13,7 @@ public class main {
 }
 
 class BankAccount{
-    private String password;
     public void SetPassword(String pwd){
-        password = pwd;
     }
 }
 
