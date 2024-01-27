@@ -11,7 +11,8 @@ public class power_function {
         if (n == 0) {
             return 1;
         }
-        int halfPowerSeq = pow(x, n / 2) * pow(x, n / 2);
+        int halfPower = pow(x, n / 2);
+        int halfPowerSeq = halfPower * halfPower;
 
         if (n % 2 != 0) {
             halfPowerSeq = x * halfPowerSeq;
