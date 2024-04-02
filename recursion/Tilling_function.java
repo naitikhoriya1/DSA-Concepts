@@ -5,14 +5,15 @@ public class Tilling_function {
         if (n == 1 || n == 0) {
             return 1;
         }
-        // vertical Choice
-        int fnm1 = tiling(n - 1);
+        // // vertical Choice
+        // int fnm1 = tiling(n - 1);
 
-        // horizontal Choice
-        int fnm2 = tiling(n - 2);
+        // // horizontal Choice
+        // int fnm2 = tiling(n - 2);
 
-        int totalWays = fnm1 + fnm2;
-        return totalWays;
+        // int totalWays = fnm1 + fnm2;
+        // return totalWays;
+        return tiling(n - 1) + tiling(n - 2);
     }
 
     public static void main(String[] args) {
