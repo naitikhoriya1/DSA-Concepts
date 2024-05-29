@@ -14,7 +14,7 @@ public class mergeSort {
         }
         int mid = si + (ei - si) / 2;
         MergeSort(arr, si, mid);
-        MergeSort(arr, mid, ei);
+        MergeSort(arr, mid + 1, ei);
         merge(arr, si, mid, ei);
     }
 
@@ -40,8 +40,8 @@ public class mergeSort {
         while (j <= ei) {
             temp[k++] = arr[j++];
         }
-        for (int k = 0, i = si; k < temp.length; k++, i++) {
-            arr[i] = temp[k];
+        for (int l = 0, m = si; l < temp.length; l++, m++) {
+            arr[m] = temp[l];
         }
     }
 
