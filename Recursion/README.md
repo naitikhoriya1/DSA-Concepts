@@ -1,12 +1,12 @@
-# 🔁 Binary Search with Recursion – Key Idea
+# 1 -🔁 BinarySearch Problem = with Recursion – Key Idea
 
 For a sorted array:
 
-* Find the middle index `mid`.
-* If `arr[mid] == key` → return `mid`.
-* If `key < arr[mid]` → search in the left half.
-* If `key > arr[mid]` → search in the right half.
-* If `start index > end index` → return `-1` (not found).
+- Find the middle index `mid`.
+- If `arr[mid] == key` → return `mid`.
+- If `key < arr[mid]` → search in the left half.
+- If `key > arr[mid]` → search in the right half.
+- If `start index > end index` → return `-1` (not found).
 
 ## 🧠 Tip:
 
@@ -14,19 +14,19 @@ Recursive binary search is elegant and clean, but iterative versions are usually
 
 ---
 
-# 🔁 Subsequences of a String – Key Idea
+# 🔁 CutIntoSegment  Problem =  a String – Key Idea
 
 🧠 **Goal:**
 
-* Print all subsequences of "abc"
-* A string of length n has `2^n` subsequences. For "abc", that's 8.
+- Print all subsequences of "abc"
+- A string of length n has `2^n` subsequences. For "abc", that's 8.
 
 🔁 **Recursive Decision Tree:**
 
 Each character has two choices:
 
-* ✅ Include it in output
-* ❌ Exclude it from output
+- ✅ Include it in output
+- ❌ Exclude it from output
 
 ## 🌳 Visualized as a binary tree:
 
@@ -78,7 +78,7 @@ Subsequences are a fundamental concept in combinatorics and have applications in
 
 ---
 
-# 🪙 Coin Change Problem - Recursive + Memoization (C++)
+# 2 - 🪙 CoinChange Problem =    Recursive + Memoization (C++)
 
 This project solves the **Coin Change** problem using a **top-down dynamic programming** (memoization) approach in C++.
 
@@ -90,24 +90,24 @@ Given a list of coin denominations and a target amount, return the **minimum num
 
 ## 💡 Approach
 
-* ⚙️ Recursive Function Logic: `coinChange(coins, amount, dp)`
+- ⚙️ Recursive Function Logic: `coinChange(coins, amount, dp)`
 
-* ✅ Base Cases:
+- ✅ Base Cases:
 
-  * `amount == 0`: return 0 (no more coins needed)
-  * `amount < 0`: return `INT_MAX` (invalid path)
-  * `dp[amount] != -1`: return `dp[amount]` (already computed)
+  - `amount == 0`: return 0 (no more coins needed)
+  - `amount < 0`: return `INT_MAX` (invalid path)
+  - `dp[amount] != -1`: return `dp[amount]` (already computed)
 
-* 🔁 Recursive Step:
+- 🔁 Recursive Step:
 
-  * Loop through each coin:
+  - Loop through each coin:
 
-    * Recursively call `coinChange(coins, amount - coin[i], dp)`
-    * If result is not `INT_MAX`, update the minimum number of coins
+    - Recursively call `coinChange(coins, amount - coin[i], dp)`
+    - If result is not `INT_MAX`, update the minimum number of coins
 
-* 🧠 Store and Return:
+- 🧠 Store and Return:
 
-  * Store the result in `dp[amount]`
+  - Store the result in `dp[amount]`
 
 ## 🧾 Example
 
@@ -119,7 +119,7 @@ Output: Minimum coins needed: 3
 
 ---
 
-# 🧮 Maximum Sum of Non-Adjacent Elements (Recursive)
+# 3 -🧮 MaximumSumWithoutAdjacent Problem =  Elements (Recursive)
 
 This C++ program calculates the **maximum sum of non-adjacent elements** in an array using recursion.
 
@@ -136,9 +136,9 @@ Output: 8
 
 ## 🚀 Approach
 
-* **Include** the current element and skip the next
-* **Exclude** the current element and move to the next
-* Choose the maximum of both choices
+- **Include** the current element and skip the next
+- **Exclude** the current element and move to the next
+- Choose the maximum of both choices
 
 ## 📜 Code
 
@@ -194,13 +194,13 @@ Output: 8
 
 ## 📌 Note
 
-* Time complexity is **exponential**: `O(2^n)`
-* Can be optimized using **Dynamic Programming** with memoization
+- Time complexity is **exponential**: `O(2^n)`
+- Can be optimized using **Dynamic Programming** with memoization
 
 ---
 
 Let me know if you want:
 
-* Dynamic programming version
-* Complexity analysis
-* Image version of the tree diagram
+- Dynamic programming version
+- Complexity analysis
+- Image version of the tree diagram
