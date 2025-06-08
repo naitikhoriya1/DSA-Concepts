@@ -622,31 +622,6 @@ void solve(vector<int> &ans, int i, int j)
 
 ---
 
-## 🧪 How to Run
-
-### 1. Compile
-
-```bash
-g++ main.cpp -o subarray
-```
-
-### 2. Execute
-
-```bash
-./subarray
-```
-
----
-
-## 📂 File Structure
-
-```
-recursive-subarray/
-├── main.cpp       # Main program logic
-└── README.md      # Documentation
-```
-
----
 
 ## 📊 Time Complexity
 
